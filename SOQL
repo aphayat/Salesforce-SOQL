@@ -1,0 +1,3 @@
+// How to get the reference 
+SELECT MetadataComponentId,MetadataComponentNamespace,RefMetadataComponentType,RefMetadataComponentName,MetadataComponentName, MetadataComponentType,RefMetadataComponentId  FROM MetadataComponentDependency
+Where RefMetadataComponentType = 'ApexClass' and MetaDataComponentType = 'AuraDefinition'
