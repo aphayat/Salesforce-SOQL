@@ -1,3 +1,6 @@
 // How to get the reference 
 SELECT MetadataComponentId,MetadataComponentNamespace,RefMetadataComponentType,RefMetadataComponentName,MetadataComponentName, MetadataComponentType,RefMetadataComponentId  FROM MetadataComponentDependency
 Where RefMetadataComponentType = 'ApexClass' and MetaDataComponentType = 'AuraDefinition'
+
+// Date string format
+select id,name, createddate from account where createddate > 2019-03-23T00:00:00+05:30
